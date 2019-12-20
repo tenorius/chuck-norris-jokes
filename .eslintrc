@@ -1,0 +1,21 @@
+{
+  "plugins": ["prettier"],
+  "extends": [
+    "react-app",
+    "prettier",
+    "prettier/react"
+  ],
+  "rules": {},
+  "globals": {
+    "window": true,
+    "document": true,
+    "localStorage": true,
+    "FormData": true,
+    "FileReader": true,
+    "Blob": true,
+    "navigator": true,
+    "fetch": true,
+    "Audio": true,
+    "Notification": true
+  }
+}
