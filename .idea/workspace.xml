@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a4e3c7c-6227-4cef-8c54-5c9bb511cbe9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/modules/facts/contexts/favourite-joke-context.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/facts/contexts/stored-categories-context.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/facts/components/favorite-joke-card.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/core/components/Text.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/core/components/Text.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/facts/components/fact-card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/facts/components/fact-card.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/facts/containers/categories-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/facts/containers/categories-page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/facts/containers/category-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/facts/containers/category-page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/facts/facts-module.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/facts/facts-module.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -92,7 +87,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1576872735234</updated>
-      <workItem from="1576872737016" duration="27899000" />
+      <workItem from="1576872737016" duration="28336000" />
     </task>
     <servers />
   </component>
