@@ -5,6 +5,7 @@
   "dependencies": {
     "@babel/core": "7.7.4",
     "@material-ui/core": "^4.8.0",
+    "@material-ui/icons": "^4.5.1",
     "@svgr/webpack": "4.3.3",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -46,6 +47,7 @@
     "postcss-normalize": "8.0.1",
     "postcss-preset-env": "6.7.0",
     "postcss-safe-parser": "4.0.1",
+    "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-app-polyfill": "^1.0.5",
     "react-async": "^10.0.0",

@@ -1,56 +1,17 @@
-import React, { lazy } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import { LastLocationProvider } from 'react-router-last-location';
-import { AppHistoryProvider } from './context/app-history-context';
+import React, { lazy, Suspense } from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import PageTransitionHandler from './components/page-transition-handler';
-import { CartProvider } from '../cart/context/cart-context';
-import { AddressProvider } from '../address/context/address-context';
-import Navbar from './components/navbar';
-import PrivateRoute from './components/private-route';
+const FactsModule = lazy(() => import('../facts/facts-module'));
 
-const HomeModule = lazy(() => import('../home/home-module'));
-const MerchantModule = lazy(() => import('../merchant/merchant-module'));
-const LoginModule = lazy(() => import('../login/login-module'));
-const OrdersModule = lazy(() => import('../orders/orders-module'));
-const ProfileModule = lazy(() => import('../profile/profile-module'));
-
-const AppRouter = () => {
+const CoreRouter = () => {
   return (
     <Router>
-      <AppHistoryProvider>
-        <LastLocationProvider>
-          <AddressProvider>
-            <CartProvider>
-              <PageTransitionHandler duration={500}>
-                <Route
-                  exact
-                  path="/"
-                  render={props => <HomeModule {...props} />}
-                />
-                <Route
-                  path="/login"
-                  render={props => <LoginModule {...props} />}
-                />
-                <PrivateRoute
-                  path="/orders"
-                  render={props => <OrdersModule {...props} />}
-                />
-                <Route
-                  path="/profile"
-                  render={props => <ProfileModule {...props} />}
-                />
-                <Route
-                  path="/:merchantSlug"
-                  render={props => <MerchantModule {...props} />}
-                />
-              </PageTransitionHandler>
-              <Navbar />
-            </CartProvider>
-          </AddressProvider>
-        </LastLocationProvider>
-      </AppHistoryProvider>
+      <Suspense fallback={<div>Suspense Loading...</div>}>
+        <Switch>
+          <Route path="/" render={props => <FactsModule {...props} />} />
+        </Switch>
+      </Suspense>
     </Router>
   );
 };
-export default AppRouter;
+export default CoreRouter;
