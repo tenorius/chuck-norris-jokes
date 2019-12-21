@@ -1,10 +1,12 @@
 import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import { useParams } from 'react-router';
+import { Link } from 'react-router-dom';
 import { useAsync } from 'react-async';
 import { getRandomCategoryJoke } from '../api/chuck-norris-api';
 import Text from '../../core/components/Text';
 import FactCard from '../components/fact-card';
+import { useFavouriteJokeDispatch } from '../contexts/favourite-joke-context';
 
 const Styled = {
   Root: styled.div``,
@@ -22,6 +24,10 @@ const Styled = {
     font-weight: 700;
     font-size: 18px;
     min-width: 240px;
+  `,
+  Link: styled(Link)`
+    display: block;
+    text-align: center;
   `
 };
 
@@ -47,7 +53,7 @@ const CategoryPage = () => {
 
       {isResolved && (
         <>
-          <FactCard text={data.value} />
+          <FactCard text={data.value} id={data.id} />
         </>
       )}
       {isPending && 'loading...'}
@@ -55,6 +61,7 @@ const CategoryPage = () => {
       <Styled.Button disabled={isPending} onClick={() => run({ category })}>
         LOAD NEXT
       </Styled.Button>
+      <Styled.Link to={'/'}>Back to home</Styled.Link>
     </Styled.Root>
   );
 };

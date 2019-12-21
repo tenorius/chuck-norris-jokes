@@ -58,6 +58,11 @@ const Root = styled.div`
       css`
         font-weight: ${props.weight};
       `};
+    ${props =>
+      props.bottomSpacing &&
+      css`
+        margin-bottom: ${props.bottomSpacing}px;
+      `};
     text-align: ${props => props.align};
   }
 `;
