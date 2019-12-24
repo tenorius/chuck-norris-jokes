@@ -28,6 +28,7 @@ const LoadingInline = ({ text }) => {
   const [label, setLabel] = useState(text);
   const ellipsisCount = useRef(0);
 
+  //exemplo de um componentWillUnmount feito com useEffect, Interval eh limpado quando o componente desmonta.
   useEffect(() => {
     const referece = setInterval(() => {
       setLabel(ellipsisAnimation(ellipsisCount.current, text));

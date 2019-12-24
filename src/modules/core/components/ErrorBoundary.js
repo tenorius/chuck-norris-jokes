@@ -6,6 +6,7 @@ const Root = styled.p`
   text-align: center;
 `;
 
+// Ainda nao eé possivel fazer ErrorBoundaries em React sem Class
 class ErrorBoundary extends React.Component {
   constructor(props) {
     super(props);

@@ -33,6 +33,7 @@ const Styled = {
   `
 };
 
+// adaptacao necessaria para uso do deferFn do useAsync
 const adaptedGetRandomCategoryJoke = args => getRandomCategoryJoke(...args);
 const CategoryPage = () => {
   let { category } = useParams();

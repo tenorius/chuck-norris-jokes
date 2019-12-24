@@ -10,20 +10,24 @@ import LoadingInline from '../../core/components/loading-inline';
 const Root = styled.div``;
 
 function CategoriesPage() {
+  // deferFn carrega uma funcao asincrona e a trasnforma em uma funcao chamada run para uso posterior
   const { isPending, isResolved, isRejected, data, run, setData } = useAsync({
     deferFn: getCategories
   });
   const { categories, setCategories } = useStoredCategories();
 
   useEffect(() => {
+    // se nao foi feito fetch de nenhuma categoria, fazer o fetch
     if (!categories.length) {
       run();
     } else {
+      // ja existe categorias carregadas, leia do context
       setData(categories);
     }
   }, [categories, run, setData]);
 
   useEffect(() => {
+    // effect de sucesso no fetch
     if (isResolved && data) {
       setCategories(data);
     }
