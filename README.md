@@ -14,7 +14,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ### 100% powered by Hooks
 
 O codigo usa majoritariamente a nova API de gerenciamento de estado do React. A exemplos de useReducer, useState, useContext, useEffect substituindo diferentes metodos de ciclos de vidas da antiga API.
-Para um exemplo de uso de context junto com useReducer (Meu substituto para o Redux em diversos projetos): favoritar um card de "Fato" na pagina de categoria e voltar para a Pagina Inicial.
+Para um exemplo de uso de context junto com useReducer (Meu substituto para o Redux em diversos projetos): favoritar um card na página de categoria e voltar para a página inicial.
 
 ### Foco em uma estrutura escalável
 

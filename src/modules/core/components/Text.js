@@ -67,9 +67,13 @@ const Root = styled.div`
   }
 `;
 
-const Text = ({ variant, children, ...props }) => {
+const Text = ({ variant, children, className, ...props }) => {
   return (
-    <Root {...props} as={tagMap[variant]} className={`typography-${variant}`}>
+    <Root
+      {...props}
+      as={tagMap[variant]}
+      className={`typography-${variant} ${className}`}
+    >
       {children}
     </Root>
   );
@@ -89,13 +93,15 @@ Text.propTypes = {
   ]),
   color: PropTypes.string,
   weight: PropTypes.oneOf([300, 500, 700]),
-  align: PropTypes.oneOf(['center', 'right', 'left'])
+  align: PropTypes.oneOf(['center', 'right', 'left']),
+  className: PropTypes.string
 };
 
 Text.defaultProps = {
   variant: 'body1',
   color: 'black',
-  align: 'left'
+  align: 'left',
+  className: ''
 };
 
 export default Text;

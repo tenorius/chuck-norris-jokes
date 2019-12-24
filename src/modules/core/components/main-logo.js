@@ -11,16 +11,22 @@ const Styled = {
     margin-bottom: 32px;
   `,
   Image: styled.div`
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 200px;
+    padding: 20px;
     margin: 0 auto;
+    background: radial-gradient(yellow, transparent);
+    border-radius: 50%;
     img {
       height: 100%;
       width: auto;
     }
   `,
-  Text: styled.h1`
-    color: white;
+  Text: styled(Text)`
+    && {
+      font-size: 4rem;
+    }
+    font-style: italic;
   `
 };
 
@@ -30,9 +36,9 @@ function MainLogo() {
       <Styled.Image>
         <img src={chuckImage} />
       </Styled.Image>
-      <Text variant={'h1'} color={'white'} align={'center'}>
+      <Styled.Text variant={'h1'} color={'white'} align={'center'}>
         Chuck Norris Facts
-      </Text>
+      </Styled.Text>
     </Styled.Root>
   );
 }

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
 
 const Root = styled.div`
@@ -12,28 +12,29 @@ const Root = styled.div`
   align-items: center;
 `;
 
-let ellipsisCount = 0;
-const ellipsisAnimation = text => {
+const ellipsisAnimation = (count, text) => {
   let localEllipsisCount;
-  if (ellipsisCount === 0) {
+  if (count === 0) {
     localEllipsisCount = '.';
-  } else if (ellipsisCount === 1) {
+  } else if (count === 1) {
     localEllipsisCount = '..';
   } else {
     localEllipsisCount = '...';
   }
-  ellipsisCount = (ellipsisCount + 1) % 3;
   return `${text}${localEllipsisCount}`;
 };
 
 const LoadingInline = ({ text }) => {
   const [label, setLabel] = useState(text);
+  const ellipsisCount = useRef(0);
+
   useEffect(() => {
     const referece = setInterval(() => {
-      setLabel(ellipsisAnimation(label));
+      setLabel(ellipsisAnimation(ellipsisCount.current, text));
+      ellipsisCount.current = (ellipsisCount.current + 1) % 3;
     }, 200);
     return () => clearInterval(referece);
-  }, [label]);
+  }, [label, text]);
   return <Root>{label}</Root>;
 };
 
