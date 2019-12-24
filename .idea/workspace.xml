@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a4e3c7c-6227-4cef-8c54-5c9bb511cbe9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/modules/facts/components/favorite-joke-card.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/core/components/ErrorBoundary.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/core/components/loading-inline.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/core/core-router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/core/core-router.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/facts/containers/categories-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/facts/containers/categories-page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/facts/containers/category-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/facts/containers/category-page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/facts/facts-router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/facts/facts-router.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -87,7 +94,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1576872735234</updated>
-      <workItem from="1576872737016" duration="28336000" />
+      <workItem from="1576872737016" duration="31988000" />
+      <workItem from="1577131549727" duration="3796000" />
     </task>
     <servers />
   </component>
@@ -99,7 +107,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

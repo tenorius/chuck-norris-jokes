@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { Suspense, useEffect } from 'react';
 import styled from 'styled-components';
 import { useParams } from 'react-router';
 import { Link } from 'react-router-dom';
@@ -7,6 +7,8 @@ import { getRandomCategoryJoke } from '../api/chuck-norris-api';
 import Text from '../../core/components/Text';
 import FactCard from '../components/fact-card';
 import { useFavouriteJokeDispatch } from '../contexts/favourite-joke-context';
+import LoadingInline from '../../core/components/loading-inline';
+import ErrorBoundary from '../../core/components/ErrorBoundary';
 
 const Styled = {
   Root: styled.div``,
@@ -56,7 +58,7 @@ const CategoryPage = () => {
           <FactCard text={data.value} id={data.id} />
         </>
       )}
-      {isPending && 'loading...'}
+      {isPending && <LoadingInline text={'Loading joke'} />}
       {isRejected && 'error'}
       <Styled.Button disabled={isPending} onClick={() => run({ category })}>
         LOAD NEXT

@@ -5,6 +5,7 @@ import { getCategories } from '../api/chuck-norris-api';
 import CategoryList from '../components/category-list';
 import { useStoredCategories } from '../contexts/stored-categories-context';
 import FavoriteJokeCard from '../components/favorite-joke-card';
+import LoadingInline from '../../core/components/loading-inline';
 
 const Root = styled.div``;
 
@@ -30,7 +31,7 @@ function CategoriesPage() {
 
   return (
     <Root>
-      {isPending && <div>loading...</div>}
+      {isPending && <LoadingInline text={'Loading'} />}
       {data && (
         <>
           <CategoryList categories={data} />
