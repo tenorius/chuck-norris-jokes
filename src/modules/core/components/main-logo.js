@@ -11,12 +11,17 @@ const Styled = {
     margin-bottom: 32px;
   `,
   Image: styled.div`
-    height: 200px;
-    width: 200px;
-    padding: 20px;
+    height: 100px;
+    width: 100px;
+    padding: 4px;
     margin: 0 auto;
     background: radial-gradient(yellow, transparent);
     border-radius: 50%;
+    @media only screen and (min-width: 960px) {
+      height: 200px;
+      width: 200px;
+      padding: 20px;
+    }
     img {
       height: 100%;
       width: auto;
@@ -24,7 +29,10 @@ const Styled = {
   `,
   Text: styled(Text)`
     && {
-      font-size: 4rem;
+      font-size: 2rem;
+      @media only screen and (min-width: 960px) {
+        font-size: 4rem;
+      }
     }
     font-style: italic;
   `

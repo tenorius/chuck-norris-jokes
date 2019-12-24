@@ -9,9 +9,9 @@ const Root = styled.div`
   background-color: bisque;
   padding: 16px;
   margin: 0 -16px;
-  @media only screen and (min-width: 800px) {
+  @media only screen and (min-width: 960px) {
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 960px;
   }
 `;
 

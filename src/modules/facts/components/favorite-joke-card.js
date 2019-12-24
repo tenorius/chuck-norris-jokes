@@ -28,7 +28,7 @@ const Styled = {
   Card: styled.div`
     background-color: white;
     width: 200px;
-    min-height: 100px;
+    min-height: 200px;
     display: block;
     margin: 0 auto;
     position: relative;
