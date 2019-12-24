@@ -42,7 +42,7 @@ function MainLogo() {
   return (
     <Styled.Root>
       <Styled.Image>
-        <img src={chuckImage} />
+        <img src={chuckImage} alt={'Image with Chuck Norris head'} />
       </Styled.Image>
       <Styled.Text variant={'h1'} color={'white'} align={'center'}>
         Chuck Norris Facts

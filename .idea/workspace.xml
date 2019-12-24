@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="8a4e3c7c-6227-4cef-8c54-5c9bb511cbe9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/facts/containers/categories-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/facts/containers/categories-page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/facts/containers/category-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/facts/containers/category-page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/core/components/main-logo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/core/components/main-logo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/facts/components/category-card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/facts/components/category-card.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -88,7 +88,7 @@
       <option name="presentableId" value="Default" />
       <updated>1576872735234</updated>
       <workItem from="1576872737016" duration="31988000" />
-      <workItem from="1577131549727" duration="7342000" />
+      <workItem from="1577131549727" duration="7817000" />
     </task>
     <servers />
   </component>

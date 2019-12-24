@@ -19,7 +19,11 @@ function CategoryCard({ type }) {
   const history = useHistory();
 
   return (
-    <Root onClick={() => history.push(`/${type}`)}>
+    <Root
+      onClick={() => history.push(`/${type}`)}
+      role="button"
+      aria-pressed="false"
+    >
       <Text variant={'body2'} color={'orange'} weight={700}>
         {type}
       </Text>
